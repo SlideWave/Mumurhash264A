@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Murmurhash264A", "Murmurhash264A\Murmurhash264A.csproj", "{7C300BC6-F482-4E16-84B6-82EA7A115070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{AA218269-38E0-4461-A006-82A82842BF70}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7C300BC6-F482-4E16-84B6-82EA7A115070} = {7C300BC6-F482-4E16-84B6-82EA7A115070}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C300BC6-F482-4E16-84B6-82EA7A115070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C300BC6-F482-4E16-84B6-82EA7A115070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C300BC6-F482-4E16-84B6-82EA7A115070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C300BC6-F482-4E16-84B6-82EA7A115070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA218269-38E0-4461-A006-82A82842BF70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA218269-38E0-4461-A006-82A82842BF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA218269-38E0-4461-A006-82A82842BF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA218269-38E0-4461-A006-82A82842BF70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
