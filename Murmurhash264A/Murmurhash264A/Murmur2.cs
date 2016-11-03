@@ -8,6 +8,17 @@
         private const ulong m = 0xc6a4a7935bd1e995;
         private const int r = 47;
 
+        public static ulong Hash(ulong key, ulong seed)
+        {
+            ulong h = seed ^ m;
+
+            h = Mix(key, h);
+
+            h = Finish(h);
+
+            return h;
+        }
+
         public static ulong Hash(byte key, ulong seed)
         {
             ulong h = seed ^ m;
@@ -15,9 +26,7 @@
             h ^= key;
             h *= m;
 
-            h ^= h >> r;
-            h *= m;
-            h ^= h >> r;
+            h = Finish(h);
 
             return h;
         }
@@ -77,10 +86,8 @@
                     }
                 }
             }
-            
-            h ^= h >> r;
-            h *= m;
-            h ^= h >> r;
+
+            h = Finish(h);
 
             return h;
         }
@@ -93,6 +100,15 @@
 
             h ^= k;
             h *= m;
+
+            return h;
+        }
+
+        private static ulong Finish(ulong h)
+        {
+            h ^= h >> r;
+            h *= m;
+            h ^= h >> r;
 
             return h;
         }
