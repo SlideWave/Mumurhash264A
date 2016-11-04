@@ -7,10 +7,23 @@
     {
         private const ulong m = 0xc6a4a7935bd1e995;
         private const int r = 47;
+        
+        public static ulong Hash(ushort key, ulong seed)
+        {
+            ulong h = seed ^ unchecked(2UL * m);
+
+            h ^= ((ulong)key << 8);
+            h ^= key;
+            h *= m;
+            
+            h = Finish(h);
+
+            return h;
+        }
 
         public static ulong Hash(ulong key, ulong seed)
         {
-            ulong h = seed ^ m;
+            ulong h = seed ^ unchecked(8UL * m);
 
             h = Mix(key, h);
 
