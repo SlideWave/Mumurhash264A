@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SlideWave.Util.Mumurhash264A</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>ddaeschler</authors>
+    <owners>ddaeschler</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/SlideWave/Mumurhash264A</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A .net port of murmur2 MurmurHash64A implmentation</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright(c) 2016 SlideWave, LLC</copyright>
+    <tags>Murmur Murmur2 MurmurHash64A hash 64bit</tags>
+  </metadata>
+</package>
